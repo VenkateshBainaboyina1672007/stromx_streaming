@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        roboto: ["Roboto"],
+                    }
+                },
+            },
+        };
+    </script>
+</head>
+
+<body>
+    <div class="container p-3 h-[100vh] w-[100%] flex justify-center items-center bg-red-00">
+        <div class="bg-white rounded-md shadow-2xl m-7">
+            <h1 class="text-[30px] text-black font-bold text-center mt-5 m-5">Create Your Account</h1>
+            <form class="m-10" id="updatePasswordForm">
+                <div class="m-4">
+                    <label class="text-black">Emali</label>
+                    <input type="email" id="email" class="w-full border border-gray-300 rounded-md px-3 py-2 mt-2" placeholder="Enter Email">
+                    <p id="emailErrMsg" class="text-red-400"></p>
+                </div>
+                <div class="m-4">
+                    <label class="text-black">NEW PASSWORD</label>
+                    <input type="password" id="newPassword" class="w-full border border-gray-300 rounded-md px-3 py-2 mt-2" placeholder="Creat new password">
+                    <p id="newPasswordErrMsg" class="text-red-400"></p>
+                </div>
+                <div class="m-4">
+                    <label class="text-black">CONFIRM PASSWORD</label>
+                    <input type="password" id="confirmPassword" class="w-full border border-gray-300 rounded-md px-3 py-2 mt-2" placeholder="Confirm password">
+                    <p id="confirmPasswordErrMsg" class="text-red-400"></p>
+                </div>
+                <div class="flex justify-center items-center">
+                    <button id="createBtn" class="bg-red-600 p-3 text-white rounded-md m-3">Create</button>
+                </div>
+            </form>
+        </div>
+
+    </div>
+<script src="sign_in.js"></script>
+</body>
+
+</html>

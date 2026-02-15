@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+  <head> 
+     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        roboto: ["Roboto"],
+                    },
+                },
+            },
+        };
+    </script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="main.css">
+
+  </head>
+  <body>
+    <!-- Navbar -->
+  <nav id="navbar" class="fixed top-0 w-full z-50 transition-all duration-300 bg-black/70 backdrop-blur-md py-4">
+    <div class="max-w-7xl mx-auto px-8 flex items-center justify-between">
+      <div class="flex items-center gap-10">
+        <h1 class="text-red-600 font-black text-4xl tracking-tighter">NETFLIX</h1>
+        
+        <div class="hidden md:flex gap-6 text-sm font-medium">
+          <a href="#" class="hover:text-[red] text-white">Home</a>
+          <a href="#" class="hover:text-[red] text-white">TV Shows</a>
+          <a href="#" class="hover:text-[red] text-white">Movies</a>
+          <a href="#" class="hover:text-[red] text-white">New & Popular</a>
+        </div>
+      </div>
+
+      <!-- Search Bar -->
+      <div class="flex-1 max-w-md mx-8">
+        <div class="relative">
+          <input id="searchInput" type="text" placeholder="Search movies..." 
+                 class="w-full bg-white-900 border border-white-600 rounded-full py-3 pl-12 pr-6 text-sm focus:outline-none focus:border-red-600 transition text-blach">
+            
+          
+        </div>
+      </div>
+
+      <div class="flex items-center gap-6">
+        <i class="fa-solid fa-globe text-xl cursor-pointer"></i>
+        <i class="fa-solid fa-bell text-xl cursor-pointer"></i>
+        <div class="w-8 h-8 bg-red-600 rounded flex items-center justify-center text-sm font-bold">V</div>
+      </div>
+    </div>
+  </nav>
+   
+    <div class="container bg-black h-[100%] p-[30px]">
+        <section class="trending p-[30px]">
+            <div class="m-[30px]">
+                <h2 class="font-bold text-white text-[22px]">Tollywood Movies</h2>
+                <div class="trending-row">
+                        <div class="movies_card" id="card1">
+                            <span class="rank">1</span>
+                            <img src="https://a.ltrbxd.com/resized/film-poster/7/8/0/9/1/8/780918-guntur-kaaram-0-230-0-345-crop.jpg?v=51970b502f" alt="">
+                        </div>
+                        <div class="movies_card">
+                            <span class="rank">2</span>
+                            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/43/Mana_Shankara_Vara_Prasad_Garu.jpg/250px-Mana_Shankara_Vara_Prasad_Garu.jpg" alt="">
+                        </div>
+                        <div class="movies_card">
+                            <span class="rank">3</span>
+                            <img src="https://m.media-amazon.com/images/M/MV5BMTY3ZWM2NTgtN2ZiNC00OTQwLThhMjYtMzZiNWQ3MWQ4MGI2XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="">
+                        </div>
+                        <div class="movies_card">
+                            <span class="rank">4</span>
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-250,h-390/et00383697-fxezcfcryk-portrait.jpg" alt="">
+                        </div>
+                        <div class="movies_card">
+                            <span class="rank">5</span>
+                            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/e/e4/Tere_Ishk_Mein_poster.jpg/250px-Tere_Ishk_Mein_poster.jpg" alt="">
+                        </div>
+                        <div class="movies_card">
+                            <span class="rank">6</span>
+                            <img src="https://m.media-amazon.com/images/M/MV5BMDI1M2Y4OGEtMzZmZS00ZmUxLWJmZjEtODI3OTg1OGU0YzJhXkEyXkFqcGc@._V1_.jpg" alt="">
+                        </div>
+                        <div class="movies_card">
+                            <span class="rank">7</span>
+                            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/2/26/Border_2_Poster.jpg/250px-Border_2_Poster.jpg" alt="">
+                        </div>
+                        <div class="movies_card">
+                            <span class="rank">8</span>
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSj5xhGLaOJjTQcsCaLOqkEwaU2mLsLXUC3MA&s" alt="">
+                        </div>
+                        <div class="movies_card">
+                            <span class="rank">9</span>
+                            <img src="https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/dhandoraa-et00471381-1763444823.jpg" alt="">
+                        </div>
+                        <div class="movies_card">
+                            <span class="rank">10</span>
+                            <img src="https://m.media-amazon.com/images/M/MV5BNGQ2ZWUwMWMtZDI2ZS00NTA0LWI1MTMtNDJjZjczN2U5MTU1XkEyXkFqcGc@._V1_.jpg" alt="">
+                        </div>
+                    
+                </div>
+            </div>
+            <div class="m-[30px]">
+                <h2 class="font-bold text-white text-[22px]">Bollywood Movies</h2>
+                <div class="trending-row">
+                        <div class="movies_card" id="card1">
+                            <span class="rank">1</span>
+                            <img src="https://resizing.flixster.com/wad59luQ0LjESTXwxw51gJ7_EKo=/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzNjYTZkMTk2LTA0MGUtNDIyYy1iZjg3LWQ5MjgyYjg5MDYyYi5qcGc=" alt="">
+                        </div>
+                        <div class="movies_card">
+                            <span class="rank">2</span>
+                            <img src="https://upload.wikimedia.org/wikipedia/en/7/74/Haq_film_2025.jpg" alt="">
+                        </div>
+                        <div class="movies_card">
+                            <span class="rank">3</span>
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJCVUFUsi9gancg00N86QkZY7S0Yj1xzbAfg&s" alt="">
+                        </div>
+                        <div class="movies_card">
+                            <span class="rank">4</span>
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxUP7pnIh241oyABuEvTwjFi-xr6veuynrgw&s" alt="">
+                        </div>
+                        <div class="movies_card">
+                            <span class="rank">5</span>
+                            <img src="https://m.media-amazon.com/images/S/pv-target-images/8a283a8a67c22ef2eba69aef40244f754be7e9f731b3a27885dfd5ce858794ab.jpg" alt="">
+                        </div>
+                        <div class="movies_card">
+                            <span class="rank">6</span>
+                            <img src="https://m.media-amazon.com/images/M/MV5BMTk2ZmFhYjctYWZiYy00N2IxLWEzMWItZGRiMDY4ZDQwZWFlXkEyXkFqcGc@._V1_.jpg" alt="">
+                        </div>
+                        <div class="movies_card">
+                            <span class="rank">7</span>
+                            <img src="https://upload.wikimedia.org/wikipedia/en/c/cd/Raat_Akeli_Hai_film_poster.jpg" alt="">
+                        </div>
+                        <div class="movies_card">
+                            <span class="rank">8</span>
+                            <img src="https://upload.wikimedia.org/wikipedia/en/8/8b/Mardaani_2_poster.jpg" alt="">
+                        </div>
+                        <div class="movies_card">
+                            <span class="rank">9</span>
+                            <img src="https://upload.wikimedia.org/wikipedia/en/6/63/Single_Salma.jpeg" alt="">
+                        </div>
+                        <div class="movies_card">
+                            <span class="rank">10</span>
+                            <img src="https://m.media-amazon.com/images/M/MV5BNDdkNTY1MDQtY2I5MC00OTFlLTg5OWQtZWE2YzE5NWFiMDgzXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="">
+                        </div>
+                    
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

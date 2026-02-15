@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+     
+  <head> 
+   
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        roboto: ["Roboto"],
+                        monoton: ["Monoton" , "cursive"]
+                    },
+                },
+            },
+        };
+    </script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="    https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+  </head>
+  <body>
+    <div class="login_container" id="login_section">
+        <div class="flex flex-row">
+            <h1 class="text-red-700 font-[Netflix Sans] font-bold text-[40px] p-3">STROMX</h1>
+            <button class="login_button m-3 ml-auto" id="sign_inBtn">Sign In</button>
+        </div>
+        <div class="m-[50px] p-2">
+            <div class="flex flex-column  justify-center align-items-center">
+                <h1 class="text-[50px] fornt-[monoton] font-bold  text-white">Unlimited movies,<br>showes,and more</h1>
+                <h2 class="text-white m-2">Ready to watch?Enter your email to start😊</h2>
+            </div>
+            <form id="form" class="p-2">
+                <div class="d-flex flex-row  justify-center">
+                        <div class=" m-[2px]">
+                            <input  id="email" type="email" placeholder="Enter Your Email" class="w-[25vw] p-[10px] rounded-md ">
+                            <p id="email_warningMsg" class="text-red-500 font-bold mt-2"></p>
+                        </div>
+                        <div class="m-[2px]">
+                            <button id="login_button" class="login_button">Get Start<i class="fa-solid fa-angle-right"></i></button>
+                        </div>
+                    
+                </div>
+                
+                
+            </form>   
+        </div> 
+    </div>
+    <script src="script.js"></script>
+   <script type="text/javascript" src="https://d2clawv67efefq.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
+  </body>
+</html>
